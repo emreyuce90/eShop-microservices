@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35527.113 d17.12
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{B2026120-689D-4E62-A125-73E2DB1B0FEE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{B49D4782-753E-4998-9CA8-825143D9293E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Catalog", "Catalog", "{51CA4C48-C052-4C16-8A75-855B91B255B7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "eShop-microservices.Catalog.API", "src\Services\Catalog\eShop-microservices.Catalog.API\eShop-microservices.Catalog.API.csproj", "{41FAD913-AC59-4EB8-80B7-1978AD04F9AB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BuildingBlocks", "src\BuildingBlocks\BuildingBlocks\BuildingBlocks.csproj", "{BFDCD640-2E93-4C84-97CB-C24B1E9D2481}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BuildingBlocks", "BuildingBlocks", "{8E0659EE-35B7-4150-9565-D164D9DBA260}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{41FAD913-AC59-4EB8-80B7-1978AD04F9AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{41FAD913-AC59-4EB8-80B7-1978AD04F9AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{41FAD913-AC59-4EB8-80B7-1978AD04F9AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{41FAD913-AC59-4EB8-80B7-1978AD04F9AB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BFDCD640-2E93-4C84-97CB-C24B1E9D2481}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BFDCD640-2E93-4C84-97CB-C24B1E9D2481}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BFDCD640-2E93-4C84-97CB-C24B1E9D2481}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BFDCD640-2E93-4C84-97CB-C24B1E9D2481}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{B49D4782-753E-4998-9CA8-825143D9293E} = {B2026120-689D-4E62-A125-73E2DB1B0FEE}
+		{51CA4C48-C052-4C16-8A75-855B91B255B7} = {B49D4782-753E-4998-9CA8-825143D9293E}
+		{41FAD913-AC59-4EB8-80B7-1978AD04F9AB} = {51CA4C48-C052-4C16-8A75-855B91B255B7}
+		{BFDCD640-2E93-4C84-97CB-C24B1E9D2481} = {8E0659EE-35B7-4150-9565-D164D9DBA260}
+		{8E0659EE-35B7-4150-9565-D164D9DBA260} = {B2026120-689D-4E62-A125-73E2DB1B0FEE}
+	EndGlobalSection
+EndGlobal
