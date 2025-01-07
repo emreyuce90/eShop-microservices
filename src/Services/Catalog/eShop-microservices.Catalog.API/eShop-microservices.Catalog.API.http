@@ -1,0 +1,19 @@
+@baseAddress = https://localhost:5050
+
+
+POST {{baseAddress}}/products
+Accept: application/json
+Content-Type:application/json
+{
+ "name":"Product 1",
+ "description":"Product 1 Description",
+ "price":120.50,
+ "stock":100,
+ "category":["c1","c2"],
+ "imageUrl":"product1.png"
+}
+
+###
+
+
+# string name,string description,decimal price,int stock,List<string> category,string imageUrl
