@@ -3,7 +3,7 @@
     public class CreateProductEndpoint : ICarterModule {
         public void AddRoutes(IEndpointRouteBuilder app) {
             app.MapPost("/products", async (CreateProductCommandQuery request,ISender sender) => {
-               var res =  await sender.Send(request);
+                var res =  await sender.Send(request);
                 return Results.Created($"/products/{res.Id}",res);
 
             })

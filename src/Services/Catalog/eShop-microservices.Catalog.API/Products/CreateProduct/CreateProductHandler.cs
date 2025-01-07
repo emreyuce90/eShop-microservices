@@ -1,6 +1,6 @@
 ﻿using BuildingBlocks.CQRS;
 using eShop_microservices.Catalog.API.Models;
-using Marten;
+
 namespace eShop_microservices.Catalog.API.Products.CreateProduct {
 
     public sealed record CreateProductCommandQuery(string name,string description,decimal price,int stock,List<string> category,string imageUrl):ICommand<CreateProductCommandResult>;

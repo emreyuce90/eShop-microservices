@@ -1,0 +1,12 @@
+﻿services:
+  catalogDb :
+   image : postgres
+
+  pgAdmin:
+    image: dpage/pgadmin4
+
+volumes:
+  postgres_catalog:
+  pgadmin_data:
+
+
