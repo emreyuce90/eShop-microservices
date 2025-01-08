@@ -14,3 +14,8 @@ Content-Type:application/json
 }
 
 ###
+
+GET {{baseAddress}}/products
+Accept:application/json
+
+###
