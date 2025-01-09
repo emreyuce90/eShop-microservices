@@ -13,7 +13,7 @@ namespace eShop_microservices.Catalog.API.Products.GetProductById {
 
             Product? product = await session.LoadAsync<Product>(request.Id,cancellationToken);
 
-            if (product is null) throw new ProductNotFoundException();
+            if (product is null) throw new ProductNotFoundException("Product", request.Id);
 
             return new GetProductByIdQueryResponse(product.MapProduct());
         }

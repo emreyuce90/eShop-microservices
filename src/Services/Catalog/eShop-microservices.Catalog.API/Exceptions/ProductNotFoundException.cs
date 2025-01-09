@@ -1,8 +1,12 @@
-﻿namespace eShop_microservices.Catalog.API.Exceptions {
+﻿using BuildingBlocks.Exceptions;
+
+namespace eShop_microservices.Catalog.API.Exceptions {
     [Serializable]
-    internal class ProductNotFoundException : Exception {
-   
-        public ProductNotFoundException() : base("Product not found") {
+    internal class ProductNotFoundException : NotFoundException {
+        public ProductNotFoundException(string message) : base(message) {
+        }
+
+        public ProductNotFoundException(string name,object key) : base(name,key) {
         }
     }
 }
