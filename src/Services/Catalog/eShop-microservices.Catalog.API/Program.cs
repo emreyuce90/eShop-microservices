@@ -1,5 +1,6 @@
 using BuildingBlocks.Behaviors;
 using BuildingBlocks.Exceptions;
+using eShop_microservices.Catalog.API.Data;
 using FluentValidation;
 using System.Reflection;
 
@@ -18,6 +19,9 @@ builder.Services.AddMediatR(config => {
 builder.Services.AddMarten(opt => {
     opt.Connection((builder.Configuration.GetConnectionString("Postgresql"))!);
 }).UseLightweightSessions();
+
+if(builder.Environment.IsDevelopment())
+    builder.Services.InitializeMartenWith<CatalogInitialData>();
 
 builder.Services.AddExceptionHandler<CustomExceptionHandler>();
 var app = builder.Build();
